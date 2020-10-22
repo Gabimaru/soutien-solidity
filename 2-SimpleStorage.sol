@@ -1,4 +1,6 @@
-/*Enoncé : Ecrivez un contrat SimpleStorage qui modifiera/affichera le contenu
+/*
+Enoncé :
+Ecrivez un contrat SimpleStorage qui modifiera/affichera le contenu
 d'une variable uint256 private storedData.
 Une fonction get() retournera la valeur de storedData;
 Une fonction set(uint256 value) modifiera la valeur de storedData par value passé en paramètre. '

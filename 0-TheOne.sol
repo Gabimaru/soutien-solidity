@@ -1,4 +1,7 @@
-// Enoncé : Ecrivez un contrat TheOne. Ce contrat devra posséder une fonction one qui retournera le nombre 1 lorsqu'elle sera appelée.
+/*
+Enoncé :
+Ecrivez un contrat TheOne. Ce contrat devra posséder une fonction one qui retournera le nombre 1 lorsqu'elle sera appelée.
+*/
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
@@ -14,7 +17,8 @@ contract TheOne {
     
 }
 
-/* Correction :
+/*
+Correction :
 
 contract TheOne {
   // Quel est le type de mes variables ?

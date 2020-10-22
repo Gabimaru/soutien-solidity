@@ -1,6 +1,6 @@
 /*
-Enoncé :
-Ecrivez un contrat CheckOdd.
+Enoncé : Ecrivez un contrat CheckOdd.
+Même principe mais pour une multiplication.
 Ce contrat devra posséder une fonction check qui prendra en paramètre un uint et qui retournera true si le nombre passé en paramètre à checkest impair
 sinon elle retournera false.
 */

@@ -1,4 +1,7 @@
-// Enoncé : 
+/*
+Enoncé :
+
+*/
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
@@ -14,6 +17,7 @@ contract HelloWorld {
 
 }
 
-/* Correction :
+/*
+Correction :
 
 */
