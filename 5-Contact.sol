@@ -13,11 +13,35 @@ Pour que la fonction getContact(address _addr) fonctionne il faudra ajouter prag
 pragma solidity ^0.6.0;
 pragma experimental ABIEncoderV2;
 
-contract {
+contract Contact {
+    
+    struct Address {
+        uint16 nbRue;
+        string nomRue;
+        string ville;
+        string Pays;
+    }
+    
+    struct Info {
+        string name;
+        uint8 age;
+        string email;
+        string phone;
+        // Address addresse;
+    }
+    
+    mapping(address => Info) private _contacts;
+    
+    constructor() public {
+        _contacts[0xD89D7729BF2284C2936171C2a11DC905BB4A678C] = Info("Bob", 50, "bob@email.com", "0100000000");
+    }
+    
+    function getContact(address _addr) public view returns(Info memory) {
+        return _contacts[_addr];
+    }
+    
+    function setContact(address _addr, string memory _name, uint8 _age, string memory _email, string memory _phone) public {
+        _contacts[_addr] = Info(_name, _age, _email, _phone);
+    }
 
 }
-
-/*
-Correction :
-
-*/

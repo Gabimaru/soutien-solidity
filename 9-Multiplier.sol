@@ -1,19 +1,16 @@
 /*
-Enoncé : Ecrivez un contrat CheckOdd.
+Enoncé :
 Même principe mais pour une multiplication.
-Ce contrat devra posséder une fonction check qui prendra en paramètre un uint et qui retournera true si le nombre passé en paramètre à checkest impair
-sinon elle retournera false.
 */
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 pragma experimental ABIEncoderV2;
 
-contract {
-
+contract Multiplier {
+    
+    function mul(uint nb1, uint nb2) public pure returns(uint256) {
+        return nb1 * nb2;
+    }
+    
 }
-
-/*
-Correction :
-
-*/

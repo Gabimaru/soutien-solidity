@@ -1,0 +1,49 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.6.0;
+pragma experimental ABIEncoderV2;
+
+contract Counter {
+  // storage
+  uint256 private _count;
+  uint256 private _step;
+  uint256 private _start;
+
+  constructor() public {
+    _start = 0;
+    _count = _start;
+    _step = 1;
+  }
+  
+  modifier endTime() {
+      require(_count >=0, "Finished");
+      _;
+  }
+ 
+  function inc() public {
+    _count += _step;
+  }
+
+  function dec() public {
+    _count -= _step;
+  }
+
+  function getCount() public view returns (uint256) {
+    return _count;
+  }
+  
+  function setStart(uint256 _countStart) public endTime {
+      _count = _countStart;
+  }
+
+  function getStep() public view returns (uint256) {
+    return _step;
+  }
+
+  function setStep(uint256 step) public {
+    _step = step;
+  }
+
+  function reset() public {
+    _count = _start;
+  }
+}
